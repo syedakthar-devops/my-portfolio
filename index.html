@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syed Akthar | Portfolio</title>
+  <meta name="description" content="Portfolio of Syed Akthar, aspiring AI cloud engineer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#home">Syed Akthar</a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Switch theme">Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="hello">Hi, I'm</p>
+      <h1>Syed Akthar</h1>
+      <p class="role">I build <span id="typed"></span><span class="cursor">|</span></p>
+      <p class="lead">Software engineering student in Sri Lanka, building toward a career as an AI cloud engineer with Linux, containers, CI/CD and AWS.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn" href="#contact">Contact me</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <div class="photo" aria-label="Syed Akthar">SA</div>
+        <div>
+          <p>I am currently following the HD in Computing (Software Engineering) at Cardiff Metropolitan University, based in Sri Lanka.</p>
+          <p>I enjoy automating deployments and building reliable infrastructure with Docker, Terraform and AWS. My goal is to become an AI cloud engineer, so I am learning AI fundamentals and how large language models work alongside my cloud and DevOps skills.</p>
+          <ul class="facts">
+            <li><strong>Location:</strong> Sri Lanka</li>
+            <li><strong>Education:</strong> HD Computing (Software Engineering), Cardiff Metropolitan University</li>
+            <li><strong>Email:</strong> akthar2706@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill" data-level="90"><span>Docker <em>90%</em></span><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="80"><span>Linux <em>80%</em></span><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="80"><span>Terraform <em>80%</em></span><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="80"><span>Git &amp; GitHub <em>80%</em></span><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="70"><span>Python <em>70%</em></span><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="70"><span>Jenkins <em>70%</em></span><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="70"><span>GitHub Actions <em>70%</em></span><div class="bar"><i></i></div></div>
+        <div class="skill" data-level="70"><span>AWS <em>70%</em></span><div class="bar"><i></i></div></div>
+      </div>
+      <h3 class="learning-title">Currently learning</h3>
+      <p class="chips"><span>AI fundamentals</span><span>LLM learning</span></p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>CI/CD Pipeline</h3>
+          <p>Replace with your real project: what it builds and deploys.</p>
+          <p class="tags">Jenkins, GitHub Actions, Docker</p>
+          <a href="#" target="_blank" rel="noopener">Live demo</a>
+          <a href="#" target="_blank" rel="noopener">Source code</a>
+        </article>
+        <article class="project">
+          <h3>AWS Infrastructure as Code</h3>
+          <p>Replace with your real project: what it provisions.</p>
+          <p class="tags">Terraform, AWS, Linux</p>
+          <a href="#" target="_blank" rel="noopener">Live demo</a>
+          <a href="#" target="_blank" rel="noopener">Source code</a>
+        </article>
+        <article class="project">
+          <h3>Python Automation</h3>
+          <p>Replace with your real project: what it automates.</p>
+          <p class="tags">Python, Git, Linux</p>
+          <a href="#" target="_blank" rel="noopener">Live demo</a>
+          <a href="#" target="_blank" rel="noopener">Source code</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Have a project or a job in mind? Send me a message.</p>
+      <form id="contact-form" novalidate>
+        <label>Name <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" rows="5" required></textarea></label>
+        <button class="btn primary" type="submit">Send message</button>
+        <p id="form-status" role="status"></p>
+      </form>
+      <p class="social">
+        <a href="https://github.com/syedakthar-devops" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/syed-akthar-a2b411347/" target="_blank" rel="noopener">LinkedIn</a>
+        
+        <a href="mailto:akthar2706@gmail.com">Email</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>&copy; <span id="year"></span> Syed Akthar</footer>
+  <script src="script.js"></script>
+</body>
+</html>
